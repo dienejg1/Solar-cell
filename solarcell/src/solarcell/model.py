@@ -57,6 +57,9 @@ class SolarCellMeasureDevice:
         return u2
 
 
+    
+
+
 
 
     
