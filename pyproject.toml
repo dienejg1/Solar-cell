@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pythondaq"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">3.9, <3.12"
+matplotlib = "^3.6.2"
+pyvisa-py = "^0.5.3"
+pyserial = "^3.5"
+pyside6 = "^6.4.1"
+pyqtgraph = "^0.13.1"
+pandas = "^1.5.2"
+arcade = "^2.6.16"
+nsp2visasim = "^1.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+perform_experiment = "pythondaq.view:perform_experiment"
+clipy = "pythondaq.cli:cmd_group"
+GUI_app = "pythondaq.GUI:UserInterface"
